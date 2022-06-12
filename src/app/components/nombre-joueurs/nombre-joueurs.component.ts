@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NombreJoueursService } from 'src/app/nombre-joueurs.service';
+
 
 @Component({
   selector: 'app-nombre-joueurs',
@@ -13,7 +15,7 @@ export class NombreJoueursComponent implements OnInit {
 
   public value!: number;
 
-  constructor() { }
+  constructor(private nombreJoueursService: NombreJoueursService) { }
 
   ngOnInit(): void {
   }
@@ -21,6 +23,8 @@ export class NombreJoueursComponent implements OnInit {
   onKey(nombre: any){
     this.value = nombre;
     this.hidden = true;
+    // this.nombreJoueursService.nombreJoueursChange(this.value);
   }
+
 
 }

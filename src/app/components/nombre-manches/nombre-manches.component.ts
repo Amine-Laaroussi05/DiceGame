@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NombreJoueursService } from 'src/app/nombre-joueurs.service';
 import { NombreJoueursComponent } from '../nombre-joueurs/nombre-joueurs.component';
 
 @Component({
@@ -13,16 +14,19 @@ export class NombreManchesComponent implements OnInit {
   hidden: boolean = false;
 
 
-
-
-  constructor() { }
+  constructor(private nombreJoueursService: NombreJoueursService) { }
 
   ngOnInit(): void {
+  }
+
+  getNombreJoueurs(): void{
+    this.nombreJoueursService.getNombreJoueurs().subscribe(value => this.value = value);
   }
 
   onKey(nombre: any){
     this.value = this.comparaisonJoueursManches(NombreJoueursComponent.prototype.value,nombre);
     this.hidden = true;
+    // this.getNombreJoueurs();
   }
 
   isEven(nombre: any): boolean{
