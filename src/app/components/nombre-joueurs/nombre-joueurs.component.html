@@ -1,0 +1,14 @@
+<div>
+    <p>Quel est le nombre de joueurs ?</p>
+
+    <div class="input">
+        <input #box type="number" [hidden]="hidden">
+
+    </div>
+
+    <p>{{value}}</p>
+</div>
+
+<div>
+    <button (click)="onKey(box.value)">Confirmer</button>
+</div>
