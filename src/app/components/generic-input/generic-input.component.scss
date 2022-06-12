@@ -1,0 +1,22 @@
+div {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+p {
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+    margin-top: 50px;
+}
+
+input {
+    height: 20px;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}

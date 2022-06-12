@@ -7,6 +7,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { PictureComponent } from './components/picture/picture.component';
 import { NombreJoueursComponent } from './components/nombre-joueurs/nombre-joueurs.component';
 import { NombreManchesComponent } from './components/nombre-manches/nombre-manches.component';
+import { GenericInputComponent } from './components/generic-input/generic-input.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { NombreManchesComponent } from './components/nombre-manches/nombre-manch
     HeaderComponent,
     PictureComponent,
     NombreJoueursComponent,
-    NombreManchesComponent
+    NombreManchesComponent,
+    GenericInputComponent
   ],
   imports: [
     BrowserModule,

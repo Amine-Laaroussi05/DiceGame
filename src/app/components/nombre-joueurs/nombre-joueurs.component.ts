@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NombreJoueursComponent implements OnInit {
 
-  value: number = 0;
+  texte:  string = "Quel est le nombre de joueurs?";
 
   hidden: boolean = false;
+
+  public value!: number;
 
   constructor() { }
 
